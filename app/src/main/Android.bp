@@ -36,4 +36,14 @@ android_app {
     privileged: true,
     platform_apis: true,
 
+    required: ["org.omnirom.logcat.xml"],
+
+}
+
+prebuilt_etc {
+    name: "org.omnirom.logcat.xml",
+
+    src: "org.omnirom.logcat.xml",
+    sub_dir: "permissions",
+
 }
